@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+}
+#BMISection {
+  padding-bottom: 10px;
+  border: solid;
+  border-radius: 10px;
+}
+
+#consumedCalSection {
+  padding-bottom: 10px;
+  border: solid;
+  border-radius: 10px;
+}
+
+#intakeCalSection {
+  padding-bottom: 10px;
+  border: solid;
+  border-radius: 10px;
+}
