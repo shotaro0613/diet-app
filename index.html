@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ダイエット計算アプリ</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>ダイエット計算アプリ</h1>
+    <div id="BMISection">
+      <p>①体重を入力してください</p>
+      <input type="text" id="weight" placeholder="(kg)" />
+
+      <p>②身長を入力してください</p>
+      <input type="text" id="height" placeholder="(cm)" /><br />
+
+      <button id="bmiBtn">あなたの体型を判定します</button>
+      <p id="bmi">BMI:</p>
+      <p id="judge">判定:</p>
+      <p id="normal">標準体重:</p>
+    </div>
+    <div id="consumedCalSection">
+      <p>③年齢を入力してください</p>
+      <input type="text" id="age" placeholder="(歳) " />
+
+      <p>④性別を選択してください</p>
+      <div>
+        <form>
+          <input type="radio" name="gender" id="men" value="male" />男<br />
+          <input type="radio" name="gender" id="women" value="female" />女
+        </form>
+      </div>
+
+      <p>⑤運動習慣を選択してください</p>
+      <select id="workoutSelect">
+        <option>選択してください</option>
+        <option value="0" id="no">
+          ほば運動しない。通勤、デスクワーク程度
+        </option>
+        <option value="1" id="light">軽い運動。週に1~2回程度の運動</option>
+        <option value="2" id="middle">
+          中程度の運動。週に3~5回程度の運動
+        </option></select
+      ><br />
+
+      <button id="calcRateBtn">1日の総消費カロリーを計算する</button>
+      <p id="totalConsumption"></p>
+    </div>
+    <div id="intakeCalSection">
+      <p>⑥何キロ瘦せたいですか</p>
+      <input type="text" id="loseWeight" placeholder="(kg)" />
+
+      <p>⑦何日で瘦せたいですか</p>
+      <input type="text" id="days" placeholder="(日)" /><br />
+
+      <button id="calcCal">1日の摂取カロリーを計算する</button>
+      <p id="result"></p>
+
+      <button id="pfcBtn">1日のPFC摂取バランスを計算する</button>
+      <div id="p"></div>
+      <div id="f"></div>
+      <div id="c"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
